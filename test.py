@@ -27,7 +27,7 @@ class TestSternmanEngine(unittest.TestCase):
 class TestSpindlerBattery(unittest.TestCase):
     def test_spindler_battery(self):
         current_year = date.today().year
-        battery = SpindlerBattery(current_date=current_year,last_service_date=current_year-3)
+        battery = SpindlerBattery(current_date=current_year,last_service_date=current_year-4)
         result = battery.need_service()
         self.assertTrue(result)
 
@@ -37,6 +37,23 @@ class TestNubbinBattery(unittest.TestCase):
         battery = NubbinBattery(current_date=current_year,last_service_date=current_year-3)
         result = battery.need_service()
         self.assertFalse(result)
+
+#TODO 3: Running Tires Implementation Test
+
+class TestCarriganTires(unittest.TestCase):
+    def test_carrigan_tires(self):
+        tire_test_array = [0,0,1,0]
+        tires = CarriganTires(tires_state=tire_test_array)
+        result = tires.need_service()
+        self.assertTrue(result)
+
+class TestOctoprimeTires(unittest.TestCase):
+    def test_octoprime_tires(self):
+        tire_test_array = [1,1,0,1]
+        tires = OctoprimeTires(tires_state=tire_test_array)
+        result = tires.need_service()
+        self.assertTrue(result)
+
 
 if __name__ == '__main__':
     unittest.main()
