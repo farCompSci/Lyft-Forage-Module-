@@ -1,4 +1,4 @@
-#  Completed Lyft Module Challenge
+# Completed Lyft Module Challenge
 
 In this module from TheForage.com I completed a set of tasks.
 
