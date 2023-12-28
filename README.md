@@ -5,7 +5,7 @@ Here is the Link: https://www.theforage.com/virtual-internships/prototype/xSw9ec
 
 ## What I Learned
 
--Behavioural Patterns (Factory method especially <br/>
+-Behavioural Patterns (Factory method especially) <br/>
 -Python Abstract Classes <br/>
 -Abstract Classes Implementation <br/>
 -Code Refactoring <br/>
