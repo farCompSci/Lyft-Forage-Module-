@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod, abstractproperty
 from datetime import date
 
 
-# TODO 1: Making the Engine Interface
+# Creating the Interface for Implementation
 class Engine(ABC):
     """Engines Interface for implementation"""
 
@@ -12,7 +12,7 @@ class Engine(ABC):
         """Checks if the car needs service"""
 
 
-# TODO 2: Making the Engine implementations
+# Implementing the engines from Engine interface
 class CapuletEngine(Engine):
     """Capulet Engine is implementation of the Engine Abstract Class"""
 
@@ -55,7 +55,7 @@ class SternmanEngine(Engine):
             return False
 
 
-# TODO 3: Making the Battery Interface
+# Battery Interfaces for Implementation
 class Battery(ABC):
     """Battery Interface for implementation"""
 
@@ -64,7 +64,7 @@ class Battery(ABC):
         """Checks if the battery needs service"""
 
 
-# TODO 4: Making Battery Implementations
+# Battery Implementations
 class SpindlerBattery(Battery):
     """Spindler Battery is an implementation of the Battery implementation"""
 
@@ -92,7 +92,7 @@ class NubbinBattery(Battery):
             return True
         return False
 
-#TODO 5: Making the new Tires Interface
+# The Tires Interface
 class Tires(ABC):
     """Adding Tires Interface"""
 
@@ -100,7 +100,7 @@ class Tires(ABC):
     def need_service(self) -> bool:
         """Checking the tires to see if any needs service"""
 
-#TODO 6: Making the Tires Implementations
+# Making the Tires Implementations
 class CarriganTires(Tires):
     def __init__(self,tires_state):
         self.tires_state = tires_state # Getting the state of the tires in an array
@@ -124,7 +124,7 @@ class OctoprimeTires(Tires):
             return True
         return False
 
-# TODO 7: Making the Serviceable Interface
+# Serviceable Interface
 class Serviceable(ABC):
     """Serviceable Interface, checks if a Car will be serviceable or not"""
 
@@ -134,7 +134,7 @@ class Serviceable(ABC):
         pass
 
 
-# TODO 8: Making the Car Interface
+# Making the Car Interface
 class Car(Serviceable):
     """Car Interface"""
 
@@ -150,7 +150,7 @@ class Car(Serviceable):
         return False
 
 
-# TODO 9: Create Car Factory
+# Create Car Factory Class
 class CarFactory:
     date = date.today().year
 
